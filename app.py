@@ -100,8 +100,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_dish")
+@app.route("/add_dish", methods=["GET","POST"])
 def add_dish():
+    if request.method == "POST":
+        dish = {
+            "category_name": request.form.get("category_name"),
+            "dish_name": request.form.get("dish_name"),
+            "dish_description": request.form.get("dish_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.dishes.insert_one(dish)
+        flash("Dish Successfully Added")
+        return redirect(url_for("get_dishes"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_dish.html", categories=categories)
 
