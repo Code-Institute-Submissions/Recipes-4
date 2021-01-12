@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_dishes")
 def get_dishes():
-    dishes = mongo.db.dishes.find()
+    dishes = list(mongo.db.dishes.find())
     return render_template("dishes.html", dishes=dishes)
 
 
