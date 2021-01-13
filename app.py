@@ -119,6 +119,16 @@ def add_dish():
 
 @app.route("/edit_dish/<dish_id>", methods=["GET", "POST"])
 def edit_dish(dish_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "dish_name": request.form.get("dish_name"),
+            "dish_description": request.form.get("dish_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.dishes.update({"_id": ObjectId(dish_id)}, submit)
+        flash("Dish Successfully Updated")
+
     dish = mongo.db.dishes.find_one({"_id": ObjectId(dish_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_dish.html", dish=dish, categories=categories)
