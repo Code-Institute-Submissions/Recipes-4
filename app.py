@@ -117,6 +117,13 @@ def add_dish():
     return render_template("add_dish.html", categories=categories)
 
 
+@app.route("/edit_dish/<dish_id>", methods=["GET", "POST"])
+def edit_dish(dish_id):
+    dish = mongo.db.dishes.find_one({"_id": ObjectId(dish_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_dish.html", dish=dish, categories=categories)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),
