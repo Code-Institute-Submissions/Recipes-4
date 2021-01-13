@@ -134,6 +134,13 @@ def edit_dish(dish_id):
     return render_template("edit_dish.html", dish=dish, categories=categories)
 
 
+@app.route("/delete_dish/<dish_id>")
+def delete_dish(dish_id):
+    mongo.db.dishes.remove({"_id": ObjectId(dish_id)})
+    flash("Dish Successfully Deleted")
+    return redirect(url_for("get_dishes"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),
