@@ -25,6 +25,13 @@ def get_dishes():
     return render_template("dishes.html", dishes=dishes)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    dishes = list(mongo.db.dishes.find({"$text": {"$search": query}}))
+    return render_template("dishes.html", dishes=dishes)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -48,7 +55,6 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
-
 
 
 @app.route("/login", methods=["GET", "POST"])
