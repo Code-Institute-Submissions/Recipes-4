@@ -93,7 +93,9 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        dishes = list(mongo.db.dishes.find())
+        return render_template("profile.html", dishes=dishes,
+            username=username)
 
     return redirect(url_for("login"))
 
