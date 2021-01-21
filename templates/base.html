@@ -15,12 +15,12 @@
 
     <header>
         <!--Top Navbar-->
-        <nav class="green darken-1 lighten-1">
+        <nav class="green darken-1">
             <div class="nav-wrapper">
             <a href="{{ url_for('get_dishes') }}" class="brand-logo test">Recipes</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('get_dishes') }}">Home</a></li>
+                <li><a href="{{ url_for('get_dishes') }}">All Recipes</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">My Recipes</a></li>
                     <li><a href="{{ url_for('add_dish') }}">Create New Recipe</a></li>
