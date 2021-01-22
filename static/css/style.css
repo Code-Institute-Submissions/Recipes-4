@@ -11,6 +11,18 @@
     line-height: 42px;
 }
 
+.card-image {
+    max-height: 65% !important;
+}
+
+.card-content {
+    padding: 5px 24px 0 24px !important;
+}
+
+.card-action {
+    padding: 5px 0px 5px 19px !important;
+}
+
 .dish-name {
     font-size: 35px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -18,7 +30,7 @@
 }
 
 .dish-info {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 @media screen and (min-width:1024px) {
