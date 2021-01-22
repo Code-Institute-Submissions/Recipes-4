@@ -24,10 +24,10 @@
     
     <div class="row">
         {% for dish in dishes %}
-        <div class="col s6 m6">
+        <div class="col s12 m6">
             <div class="card large">
                 <div class="card-image">
-                    <img src="static/images/cassoulet.jpg">
+                    <img src="{{ dish.url }}">
                     <span class="card-title text-darken-1"><strong class="dish-name">{{ dish.dish_name }}</strong></span>
                 </div>
                 <div class="card-content green-text text-darken-1 dish-info">

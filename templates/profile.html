@@ -12,7 +12,7 @@
         <div class="col s12 m6">
             <div class="card large">
                 <div class="card-image">
-                    <img src="static/images/sample1.jpg">
+                    <img src="{{ dish.url }}">
                     <span class="card-title text-darken-1"><strong class="dish-name">{{ dish.dish_name }}</strong></span>
                 </div>
                 <div class="card-content green-text text-darken-1 dish-info">
@@ -22,6 +22,8 @@
                 </div>
                 <div class="card-action">
                     <a href="#">See Recipe</a>
+                    <a href="{{ url_for('delete_dish', dish_id=dish._id) }}" class="btn-small red">Delete</a>
+                    <a href="{{ url_for('edit_dish', dish_id=dish._id) }}" class="btn-small light-blue lighten-1">Edit</a>
                 </div>
             </div>
         </div>

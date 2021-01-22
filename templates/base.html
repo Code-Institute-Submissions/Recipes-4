@@ -40,7 +40,7 @@
         <!--Mobile Sidebar-->
         <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align green-text text-darken-1">Recipes</h4></li>
-            <li><a href="{{ url_for('get_dishes') }}">Home</a></li>
+            <li><a href="{{ url_for('get_dishes') }}">All Recipes</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">My Recipes</a></li>
                     <li><a href="{{ url_for('add_dish') }}">Create New Recipe</a></li>
