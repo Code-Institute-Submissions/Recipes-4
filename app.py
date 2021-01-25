@@ -115,6 +115,8 @@ def add_dish():
             "category_name": request.form.get("category_name"),
             "dish_name": request.form.get("dish_name"),
             "dish_description": request.form.get("dish_description"),
+            "dish_ingredients": request.form.get("dish_ingredients"),
+            "dish_method": request.form.get("dish_method"),
             "created_by": session["user"]
         }
         mongo.db.dishes.insert_one(dish)
@@ -132,6 +134,9 @@ def edit_dish(dish_id):
             "category_name": request.form.get("category_name"),
             "dish_name": request.form.get("dish_name"),
             "dish_description": request.form.get("dish_description"),
+            "dish_ingredients": request.form.get("dish_ingredients"),
+            "dish_method": request.form.get("dish_method"),
+            "dish_url": request.form.get("dish_url"),
             "created_by": session["user"]
         }
         mongo.db.dishes.update({"_id": ObjectId(dish_id)}, submit)
