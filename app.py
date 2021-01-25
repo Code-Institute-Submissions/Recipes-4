@@ -117,6 +117,7 @@ def add_dish():
             "dish_description": request.form.get("dish_description"),
             "dish_ingredients": request.form.get("dish_ingredients"),
             "dish_method": request.form.get("dish_method"),
+            "dish_url": request.form.get("dish_url"),
             "created_by": session["user"]
         }
         mongo.db.dishes.insert_one(dish)
