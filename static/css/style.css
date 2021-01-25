@@ -15,12 +15,17 @@
     max-height: 65% !important;
 }
 
+.full {
+    max-height: 100% !important;
+}
+
 .card-content {
     padding: 5px 24px 0 24px !important;
 }
 
 .card-action {
     padding: 5px 0px 5px 19px !important;
+    border-top: 1px solid rgba(255,255,255,0.3) !important;
 }
 
 .dish-name {

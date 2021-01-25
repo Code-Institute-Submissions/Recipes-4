@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Recipes</title>
+    <title>Recipe Share</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
         <!--Top Navbar-->
         <nav class="green darken-1">
             <div class="nav-wrapper">
-            <a href="{{ url_for('get_dishes') }}" class="brand-logo test">Recipes</a>
+            <a href="{{ url_for('get_dishes') }}" class="brand-logo test">Recipe Share</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('get_dishes') }}">All Recipes</a></li>
