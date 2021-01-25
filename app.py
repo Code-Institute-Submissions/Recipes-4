@@ -148,6 +148,17 @@ def edit_dish(dish_id):
     return render_template("edit_dish.html", dish=dish, categories=categories)
 
 
+@app.route("/recipe_full/<dish_id>")
+def recipe_full(dish_id):
+    dish = mongo.db.dishes.find_one({"_id": ObjectId(dish_id)})
+    return render_template("recipe_full.html", dish=dish)
+
+#@app.route("/recipe_full/<dish_id>")
+#def recipe_full(dish_id):
+    #dish = list(mongo.db.dishes.find_one({"_id": ObjectId(dish_id)}))
+    #return render_template("recipe_full.html", dish=dish,)
+
+
 @app.route("/delete_dish/<dish_id>")
 def delete_dish(dish_id):
     mongo.db.dishes.remove({"_id": ObjectId(dish_id)})

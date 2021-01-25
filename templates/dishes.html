@@ -36,7 +36,7 @@
                     <p><em>by: {{ dish.created_by }}</em></p>
                 </div>
                 <div class="card-action">
-                    <a href="#"  class="btn-small green">See Recipe</a>
+                    <a href="{{ url_for('recipe_full', dish_id=dish._id) }}"  class="btn-small green">See Recipe</a>
                 </div>
             </div>
         </div>

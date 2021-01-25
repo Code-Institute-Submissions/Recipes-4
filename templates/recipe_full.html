@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-    
-    <h3 class="center-align green-text text-darken-1">{{ username }}'s Recipes</h3>
+
+    <h3 class="center-align green-text text-darken-1">Full Recipe</h3>
 
     
-    {% if dishes|length > 0 %}
+    
     
     <div class="row">
-        {% for dish in dishes %}
-        {% if session.user|lower == dish.created_by|lower %}
+        
         <div class="col s12 m6">
             <div class="card large">
                 <div class="card-image">
@@ -21,20 +20,14 @@
                     <p><em>by: {{ dish.created_by }}</em></p>
                 </div>
                 <div class="card-action">
-                    <a href="{{ url_for('recipe_full', dish_id=dish._id) }}" class="btn-small green ">See Recipe</a>
-                    <a href="{{ url_for('edit_dish', dish_id=dish._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-                    <a href="{{ url_for('delete_dish', dish_id=dish._id) }}" class="btn-small red">Delete</a>
+                    <a href="{{ url_for('recipe_full', dish_id=dish._id) }}"  class="btn-small green">See Recipe</a>
                 </div>
-                
             </div>
         </div>
-        {% endif %}
-        {% endfor %}
+        
     </div>
     
     
-    {% else %}
-        <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
-    {% endif %}
+    
 
 {% endblock %}
