@@ -37,7 +37,11 @@
             <div class="card horizontal deep-orange darken-1 white-text">
                 <div class="card-stacked">
                     <div class="card-action">
-                        <p>{{ dish.dish_ingredients }}</p>
+                        <ul>
+                            {% for ingredient in ingredients %}
+                                <li>{{ ingredient }}</li>
+                            {% endfor %}
+                        </ul>
                     </div>
                     
                 </div>
@@ -50,7 +54,11 @@
             <div class="card horizontal light-blue darken-4 white-text">
                 <div class="card-stacked">
                     <div class="card-action">
-                        <p>{{ dish.dish_method }}</p>
+                        <ol>
+                            {% for method in methods %}
+                                <li>{{ method }}</li>
+                            {% endfor %}
+                        </ol>
                     </div>
                     
                 </div>
