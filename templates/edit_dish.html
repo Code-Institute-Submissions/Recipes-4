@@ -34,12 +34,12 @@
             <!-- Dish Description -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                     <textarea id="dish_description" name="dish_description" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required>
                     {{- dish.dish_description -}}
                     </textarea>
-                    <label for="dish_description">Dish Description</label>
+                    <label for="dish_description">Brief Recipe Description</label>
                 </div>
             </div>
             <div class="row">
@@ -64,7 +64,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-image prefix light-blue-text text-darken-4"></i>
                     <input id="dish_url" name="dish_url" type="url" value="{{ dish.dish_url }}" class="validate" required />
                     <label for="dish_url">Image url</label>
                 </div>
