@@ -2,6 +2,10 @@
     line-height: 2;
 }
 
+nav .brand-logo {
+    font-size: 2rem !important;
+}
+
 .btn-small {
     margin: 5px;
 }
