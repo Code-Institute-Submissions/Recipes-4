@@ -7,7 +7,7 @@ The idea of this project was to create a site where users could come and share t
 
 The user has create, edit and delete functionality so they can store all their recipes in one place.
 
-<img src="https://github.com/sykez12/Recipes/blob/a44337cc86ff13af7c0046188b2b11481670a218/Documentation/Recipe%20Share.png" alt="Amiresponsive">
+<img src="Documentation/Recipe Share.png" alt="Amiresponsive">
 
 ## User Experience (UX)
 
@@ -36,7 +36,7 @@ The user has create, edit and delete functionality so they can store all their r
 
 *   ### Wireframes
 
-    -   Wireframes for all devices - [View](https://github.com/sykez12/Recipes/blob/a44337cc86ff13af7c0046188b2b11481670a218/Documentation/Wireframes/Recipe%20Share.pdf)
+    -   Wireframes for all devices - [View](Documentation/Wireframes/Recipe Share.pdf)
 
 
 *   ### Dbdiagram
@@ -71,7 +71,7 @@ The user has create, edit and delete functionality so they can store all their r
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/sykez12/Recipes/blob/a44337cc86ff13af7c0046188b2b11481670a218/Documentation/Wireframes/Recipe%20Share.pdf) during the design process.
+    - Balsamiq was used to create the [wireframes](Documentation/Wireframes/Recipe Share.pdf) during the design process.
 1. [Jquery:](https://jquery.com/)
     - Jquery used for dynamic functionality.
 
@@ -80,8 +80,8 @@ The user has create, edit and delete functionality so they can store all their r
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/sykez12/Recipes/blob/bf64f5b5c429ac4d2e2d265d124f8de0f201a076/Documentation/CSSValidationRecipeShare.png)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](Documentation/RSvalidate.png) 1 error caused from collation of all html files.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](Documentation/CSSValidationRecipeShare.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
