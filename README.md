@@ -38,6 +38,11 @@ The user has create, edit and delete functionality so they can store all their r
 
     -   Wireframes for all devices - [View](https://github.com/sykez12/Recipes/blob/a44337cc86ff13af7c0046188b2b11481670a218/Documentation/Wireframes/Recipe%20Share.pdf)
 
+
+*   ### Dbdiagram
+
+    -   Dbdiagram showing database relations - [View](Documentation/RecipeSharedbdiagram.png)
+
 ## Features
 
 -   Responsive on all device sizes.
@@ -59,8 +64,8 @@ The user has create, edit and delete functionality so they can store all their r
 
 1. [Materialize:](https://materializecss.com/)
     - Materialize was used to assist with the responsiveness and styling of the website.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import Original Surfer font and the emboss effect
+1. [Font Awesome:](https://fontawesome.com/icons?d=gallery)
+    - Font Awesome was used for their brilliant free icons.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
