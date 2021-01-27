@@ -7,7 +7,7 @@ The idea of this project was to create a site where users could come and share t
 
 The user has create, edit and delete functionality so they can store all their recipes in one place.
 
-<img src="Documentation/Recipe Share.png" alt="Amiresponsive">
+<img src="Documentation/RecipeShare.png" alt="Amiresponsive">
 
 ## User Experience (UX)
 
@@ -36,7 +36,7 @@ The user has create, edit and delete functionality so they can store all their r
 
 *   ### Wireframes
 
-    -   Wireframes for all devices - [View](Documentation/Wireframes/Recipe Share.pdf)
+    -   Wireframes for all devices - [View](Documentation/Wireframes/RecipeShare.pdf)
 
 
 *   ### Dbdiagram
@@ -71,7 +71,7 @@ The user has create, edit and delete functionality so they can store all their r
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](Documentation/Wireframes/Recipe Share.pdf) during the design process.
+    - Balsamiq was used to create the [wireframes](Documentation/Wireframes/RecipeShare.pdf) during the design process.
 1. [Jquery:](https://jquery.com/)
     - Jquery used for dynamic functionality.
 
@@ -146,16 +146,19 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Deployment
 
-### GitHub Pages
+### Heroku
 
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed to Heroku using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/sykez12/braintrain)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://sykez12.github.io/braintrain/) in the "GitHub Pages" section.
+1. Create requirements.txt so Heroku knows which applications and dependencies are required.
+2. Create Procfile with web: python app.py
+3. Create a new app on Heroku.
+4. Enable automatic deployment from github repository.
+5. Next, use config vars to tell Heroku the variables within env.py.
+6. Input IP, PORT, SECRET_KEY, MONGO_URI, and MONGO_DBNAME values.
+7. Commit requirememts.txt and Procfile.
+8. Enable Automatic deployment on Heroku.
+9. Deploy master branch.
 
 ### Forking the GitHub Repository
 
