@@ -76,7 +76,7 @@ The user has create, edit and delete functionality so they can store all their r
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]()
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/sykez12/Recipes/blob/bf64f5b5c429ac4d2e2d265d124f8de0f201a076/Documentation/CSSValidationRecipeShare.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -84,49 +84,51 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As an experienced cook, I want a site where I can share my recipes with other people.
 
-        1. Upon entering the site, users are immediately greeted with a colourful page and a colourful game.
-        2. When the computer or the user selects a colour, the element will flash with a new, brighter colour.
+        1. Upon entering the site, users are given the option to register and create an account.
+        2. Once the account is made, they can create their own recipes for all site viewers to see.
 
     2. As an experienced cook, I want a site that will enable me to store all my recipes in one place.
 
-        1. When the computer selects a colour, a sound will play that is allocated to that specific colour.
-        2. When the user selects the right colour, the sound will play. It acts as a victory noise.
+        1. Each User has their own profile page that displays only the recipes that they have created themselves.
+        2. Once created, the user has the option to edit them to their liking, as well as delete them if necessary.
 
 -   #### Novice Cook Goals
 
-    1. As an Adult Visitor, I want access to a quick-start memory game to challenge myself.
+    1. As a Novice Cook, I want to learn recipes from others.
 
-        1. The site is a singular page that the user can return to and can be playing within a matter of seconds.
+        1. As soon as the user enters the site they are shown all the recipes for them to try out.
+        2. The Novice user can follow others recipes without having to create their own account or make their own recipes.
 
-    2. As an Adult Visitor, I want to be able improve my memory capability and compete against my friends.
+    2. As a Novice Cook, I want to try my hand at creating my own recipes.
 
-        1. The endless levels mean there is a challenge for even the most intelligent users.
-        2. Experienced users can train their memory, and try to beat their friends' best scores.
+        1. Encouraged by other recipes on the site, a novice cook could try their own hand at creating recipes.
 
 -   #### Dietary Requirement Cook Goals
 
     1. As a cook with certain dietary requirements, I want a site where I can find recipes that meet my needs.
 
-        1. The memory game is a fantastic way to keep the brain active, and the memory fresh.
-        2. As an Elderly Visitor/Alzheimer Patient I can keep track of my progress via the levels I can get to.
+        1. As a vegetarian, vegan, or somebody who is on a diet, the site is all inclusive.
+        2. The user can use the search bar to search for the dishes that meet their requirements.
 
     2. As a cook with certain dietary requirements, I want to be able to store my niche selection in one place.
 
-        1. The rules are constantly on display for users to refer to.
-        2. The basic colours used within the game help to keep it simple.
-        3. The noises used in tandem with the colours help with remembering the sequences.
-        4. The low amount of elements available (four) to interact also help to keep it simple.
+        1. The site gives the user a perfect storage to collate their favourite recipes.
 
 ### Further Testing
 
-1. Playing the game
-    * Click the start button and click the elements to ensure the user cannot interact while compTurn=true.
-    * Repeat the computer sequence to see if nextTurn is working correctly.
-    * Lose the game to see if the game resets as intended.
-    * Keep clicking the start button to see if the game restarts correctly despite the interference.
-    * Complete the level to see if the next level starts correctly.
-    * Repeat the above steps for every level.
-    * Complete these steps on every device size.
+1. Testing the site
+    * Click on all navigation links including the Logo to ensure they are working correctly.
+    * Repeat this while logged in and while logged out to ensure consistency.
+    * Search dishes in the search function to verify functionality.
+    * Search something that is not on the site to ensure No results shows up as expected.
+    * Use the reset button to certify it works as intended. 
+    * Click "See Recipe" to verify the user is sent to the correct recipe page.
+    * For the user created recipes, test the edit and delete button functionality.
+    * Create a new recipe to guarantee all fields are required and that recipe is displayed properly.
+    * Log in to admin to create new categories.
+    * Test the admin edit and delete functionality of categories.
+    * Log in to different users to verify functionality.
+    * Repeat all these steps across all device sizes.
 
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
@@ -135,8 +137,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   If the user clciks on the same colour in rapid succession, the element might not play sound due to the length of the sound used.
--   If the user spam clicks the colours very quickly before the game starts, the sequence might break, and the page may need to be refreshed.
+-   On smaller phones, some field placeholder text is not aligned correctly within the field.
 
 ## Deployment
 
